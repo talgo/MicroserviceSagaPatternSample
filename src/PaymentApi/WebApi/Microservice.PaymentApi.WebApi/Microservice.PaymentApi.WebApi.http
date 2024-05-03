@@ -1,0 +1,6 @@
+@Microservice.PaymentApi.WebApi_HostAddress = http://localhost:5209
+
+GET {{Microservice.PaymentApi.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

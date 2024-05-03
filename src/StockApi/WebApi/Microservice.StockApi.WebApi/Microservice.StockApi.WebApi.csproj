@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.2.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.2.1" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Microservice.Common\Microservice.Common.csproj" />
+    <ProjectReference Include="..\..\Core\Microservice.StockApi.Application\Microservice.StockApi.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Microservice.StockApi.Infrastructure.Persistence\Microservice.StockApi.Infrastructure.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
